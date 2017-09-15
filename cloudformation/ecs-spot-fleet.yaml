@@ -74,15 +74,12 @@ Parameters:
   DBSubnetA:
     Description: RDS-Aurora DB SubnetA
     Type: String
-    Default: subnet-ebc9fc9c
   DBSubnetB:
     Description: RDS-Aurora DB SubnetB
     Type: String
-    Default: subnet-ff6b869b
   DBSubnetC:
     Description: RDS-Aurora DB SubnetC
     Type: String
-    Default: subnet-8ae6a4d3
   ecsClusterTargetCapacity:
     Default: 1
     Description: Number of EC2 Spot instances to initially launch in the ECS cluster
@@ -102,7 +99,6 @@ Parameters:
     Description: Name of an existing EC2 KeyPair to enable SSH access to the EC2 instances
     Type: AWS::EC2::KeyPair::KeyName
   sourceCidr:
-    Default: 199.106.147.10/32
     Description: Optional - CIDR/IP range for instance ssh access - defaults to VPC CIDR ??
     Type: String
   spotBidPrice:
@@ -110,7 +106,6 @@ Parameters:
     Description: Spot Instance bid price
     Type: String
   myVPC:
-    Default: vpc-f8616c9d
     Description: VPC-ID for the SecurityGroup
     Type: String
 Resources:
