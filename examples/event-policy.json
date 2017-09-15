@@ -1,0 +1,19 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+          "Effect": "Allow",
+          "Action": [
+              "ecs:RunTask"
+          ],
+          "Resource": [
+              "arn:aws:ecs:*:<your-AWS-account-number>:task-definition/<your-taskdefinition-name-from-cloudformation-resources>"
+          ],
+          "Condition": {
+              "ArnLike": {
+                  "ecs:cluster": "arn:aws:ecs:*:<your-AWS-account-number>:cluster/<your-ecs-cluster-name-from-cloudformation-resources>"
+              }
+          }
+      }
+    ]
+}

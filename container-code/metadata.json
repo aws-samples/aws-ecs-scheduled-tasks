@@ -1,0 +1,15 @@
+{
+ "version" : "0.1",
+ "language" : "docker",
+ "log_level":5,
+ "service_name":"rdslogsshipper",
+ "ecsecr": [
+   {
+     "logicalid": "rdslogsshipper",
+     "image": "509899739970.dkr.ecr.us-west-2.amazonaws.com/rdslogsshipper",
+     "port": 3300,
+     "cpu": 512,
+     "memory": 1024
+   }
+ ]
+}
