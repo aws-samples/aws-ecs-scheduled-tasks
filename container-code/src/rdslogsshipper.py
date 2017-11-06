@@ -98,7 +98,7 @@ def downloadRDSLogPortion (region, rdsClient, dbinst, logFileName, marker, LogFi
 
     if dwnldLogFilePortionResp['AdditionalDataPending']:
         # More data exists, downlod the file again with new marker
-        downloadRDSLogPortion(region=region, rdsClient=rdsClient, dbinst=dbinst, logFileName=logFileName, Marker=marker, LogFileData=LogFileData)
+        downloadRDSLogPortion(region=region, rdsClient=rdsClient, dbinst=dbinst, logFileName=logFileName, marker=marker, LogFileData=LogFileData)
 
     return LogFileData
 
