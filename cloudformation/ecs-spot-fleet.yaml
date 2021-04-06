@@ -254,7 +254,7 @@ Resources:
 
                 easy_install pip
 
-                pip install awscli
+                yum install aws-cli
 
                 aws configure set default.region ${AWS::Region}
 
